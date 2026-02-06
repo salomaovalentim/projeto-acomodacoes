@@ -84,6 +84,7 @@ A tabela foi relacionada com a coluna Last Review da tabela principal.
 
 ![image-alt](https://raw.githubusercontent.com/salomaovalentim/projeto-acomodacoes/69c1d50079d29c58a9fa70b9289691988a1df0ad/visao-geral.png)
 
+![image-alt](![visao-detalhes](https://raw.githubusercontent.com/salomaovalentim/projeto-acomodacoes/a017d5996c18e1558d27be6efef77972fc910dd1/visao-detalhes.png))
 ---
 
 ##  Principais Insights

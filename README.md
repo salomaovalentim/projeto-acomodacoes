@@ -82,7 +82,7 @@ A tabela foi relacionada com a coluna Last Review da tabela principal.
 
 ##  Visualizações
 
-![Dashboard Geral](<img width="1280" height="718" alt="image" src="https://github.com/user-attachments/assets/eca0c98f-9920-4a7b-8640-d1cb6d3130a5" />)
+![image-alt].(https://github.com/salomaovalentim/projeto-acomodacoes/blob/69c1d50079d29c58a9fa70b9289691988a1df0ad/visao-geral.png)
 
 ---
 

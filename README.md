@@ -1,4 +1,4 @@
-#  Análise de Acomodações – Airbnb New York
+#  Expansão para locação de quartos em Nova York
 
 ##  Contexto do Projeto
 
@@ -115,6 +115,8 @@ Investir em acomodações com maior volume de oferta e demanda.
 
 ###  Monitoramento do Crescimento do Mercado
 Acompanhar tendências e sazonalidade para otimizar estratégias comerciais.
+
+### Tipo de produto — quartos privativos lideram em demanda relativa
 
 ---
 

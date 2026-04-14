@@ -1,134 +1,194 @@
-#  Expansão para locação de quartos em Nova York
+# Expansão para Alocação de Quartos — Análise Estratégica de Mercado
 
-##  Contexto do Projeto
+Este projeto analisa dados de listagens e avaliações para orientar decisões de expansão no mercado de hospedagem, com foco em maximização de ocupação, receita e eficiência de portfólio.
 
-A empresa Tudo Aqui possui planos estratégicos de expansão para o segmento de locação de quartos e acomodações. Para apoiar essa decisão, foi solicitada uma análise exploratória utilizando dados públicos do Airbnb da cidade de Nova York, abrangendo o período de 2011 a 2018.
+A abordagem vai além da análise descritiva: transforma dados em direcionamento estratégico claro sobre onde expandir, qual produto priorizar e quais mercados evitar.
 
-O projeto tem como objetivo fornecer suporte analítico para auxiliar a diretoria na tomada de decisões estratégicas.
 
----
+Dashbord:<img width="1564" height="784" alt="image" src="https://github.com/user-attachments/assets/473169f9-7e83-471a-a992-48780716853c" />
 
-##  Objetivo da Análise
 
-- Identificar padrões de preços das acomodações
-- Avaliar comportamento das hospedagens ao longo do tempo
-- Analisar distribuição geográfica dos imóveis
-- Classificar acomodações por faixa de preço
-- Fornecer indicadores estratégicos para expansão do negócio
+# Objetivo
 
----
+Responder, com base em dados:
 
-## 🛠️ Ferramentas Utilizadas
+Onde expandir com menor risco?
 
-- Power BI
-- Power Query
-- DAX
-- Modelagem de Dados
+Qual tipo de acomodação gera melhor retorno?
 
----
+Como equilibrar preço, demanda e ocupação?
 
-##  Estrutura do Projeto
+Quais mercados devem ser evitados?
 
-- dataset → Base de dados utilizada  
-- dashboard → Arquivo Power BI (.pbix)  
-- imagens → Prints dos dashboards  
-- documentacao → Detalhamento técnico do projeto  
+# KPIs Principais
 
----
+Total de Listagens: 48.895
 
-##  Tratamento dos Dados
+Preço Médio: $141
 
-Foram realizadas as seguintes etapas:
+Receita Estimada: $1.3M
 
-- Remoção de registros duplicados
-- Exclusão de linhas em branco
-- Padronização de textos
-- Ajuste de espaços indevidos
-- Validação dos tipos de dados
+Total de Avaliações: 37.457
 
----
+ Insights Estratégicos (Nível Executivo)
+ 
+ Concentração de Mercado
+ 
+Manhattan + Brooklyn = 85% das listagens
 
-##  Modelagem Temporal
+83% de todas as avaliações estão nesses mercados
 
-Foi criada uma tabela calendário contendo:
+Interpretação:
 
-- Data
-- Dia
-- Mês
-- Nome do mês
-- Ano
-- Semana do mês
-- Trimestre
-- Nome do trimestre
+Demanda altamente concentrada
 
-A tabela foi relacionada com a coluna Last Review da tabela principal.
+Mercados já validados
 
----
+Baixo risco de vacância estrutural
 
-##  Dashboards Desenvolvidos
+Direcionamento:
 
-### Dashboard Estratégico
-- Indicadores gerais de preços
-- Distribuição geográfica das acomodações
-- Análise temporal das hospedagens
-- Segmentação por padrão de preço
+Mercados prioritários de entrada: Manhattan e Brooklyn
 
-### Dashboard Analítico
-- Comparação entre tipos de acomodações
-- Análise detalhada por bairros
-- Visualização de comportamento dos preços
+ Estratégia por Tipo de Quarto
+ 
+Quartos privativos são 56% mais baratos que apartamentos inteiros
 
----
+Geram mais avaliações por listagem
 
-##  Visualizações
+Hierarquia de preço (mediana):
 
-![image-alt](https://raw.githubusercontent.com/salomaovalentim/projeto-acomodacoes/69c1d50079d29c58a9fa70b9289691988a1df0ad/visao-geral.png)
-(![visao-detalhes](https://raw.githubusercontent.com/salomaovalentim/projeto-acomodacoes/a017d5996c18e1558d27be6efef77972fc910dd1/visao-detalhes.png)
----
+Apartamento inteiro → $160
 
-##  Principais Insights
+Quarto privativo → $70
 
-###  Análise de Pareto
-Entre os 100 principais bairros analisados, apenas 21 bairros representam aproximadamente 80% do preço total das acomodações, demonstrando forte concentração financeira.
+Quarto compartilhado → $45
 
-###  Distribuição Geográfica
-Foi possível identificar regiões com maior concentração de acomodações e compreender padrões estratégicos de localização.
+Interpretação:
 
-###  Crescimento de Acomodações
-Comparando 2017 e 2018, foi observado crescimento superior a 110% em determinados períodos, com média superior a 60% nos demais meses.
+Relação preço-demanda mais eficiente está nos quartos privativos
 
-###  Crescimento do Preço Final
-O ano de 2018 apresentou crescimento acumulado de 226,36% no preço final das acomodações em relação a 2017.
+Maior liquidez (mais reservas → mais avaliações)
 
-###  Classificação de Acomodações
-A categoria Baixo Padrão concentra a maior quantidade de acomodações, indicando predominância de imóveis com valores mais acessíveis.
+Direcionamento:
 
----
+Foco da expansão: quartos privativos
 
-##  Recomendações Estratégicas
+Produto com melhor equilíbrio entre volume e margem
 
-###  Foco em Bairros Estratégicos
-Priorizar investimentos nos bairros que concentram 80% do valor total das acomodações.
+ Importância da Mediana
 
-###  Foco em Baixo e Médio Padrão
-Investir em acomodações com maior volume de oferta e demanda.
+A análise utiliza mediana ao invés da média para preço.
 
-###  Monitoramento do Crescimento do Mercado
-Acompanhar tendências e sazonalidade para otimizar estratégias comerciais.
+Motivo:
 
-### Tipo de produto — quartos privativos lideram em demanda relativa
+Remove distorções causadas por outliers (ex: imóveis de luxo)
 
----
+Resultado:
 
-##  Resultados do Projeto
+Representação mais fiel do mercado real
 
-O dashboard permite visão estratégica do mercado de hospedagem, auxiliando na análise de viabilidade da expansão do negócio.
+Melhor base para decisão de pricing
 
----
+ Eficiência de Mercado (Ocupação)
+ 
+Brooklyn:
 
-##  Aprendizados
+Taxa de ociosidade: 7,2%
 
-- Desenvolvimento de modelagem dimensional
-- Aplicação de DAX
-- Construção de dashboards estratégicos
-- Aplicação de regras de negócio
+Alta densidade de listagens
+
+ Mercado mais saudável
+
+Alta demanda + baixa vacância
+
+Expansão com menor risco
+
+Manhattan:
+
+Ociosidade: 13,5%
+
+ Sinal de alerta
+
+Possível saturação parcial
+
+Concorrência elevada
+
+Pressão em preços
+
+Staten Island e Bronx:
+
+ Mercados não recomendados
+
+Baixa demanda relativa
+
+Maior risco de vacância
+
+Menor volume de avaliações
+
+ Implicações de Negócio
+
+A análise aponta uma estratégia clara de expansão:
+
+Prioridade 1 — Brooklyn
+
+Melhor equilíbrio entre oferta e demanda
+
+Menor risco operacional
+
+Ambiente ideal para crescimento
+
+Prioridade 2 — Manhattan (com cautela)
+
+Alto volume, porém competitivo
+
+Necessário diferencial (preço, qualidade ou localização)
+
+Evitar
+
+Staten Island
+
+Bronx
+
+# Estratégia Recomendada
+Expandir em Brooklyn com foco em quartos privativos
+
+Melhor ROI esperado
+
+Alta liquidez
+
+Entrar em Manhattan de forma seletiva
+
+Evitar regiões saturadas
+
+Estratégia diferenciada obrigatória
+
+Adotar pricing baseado em mediana
+
+Evita distorções
+
+Mais aderente ao mercado
+
+Maximizar avaliações
+
+Impacto direto na ocupação
+
+Estratégia de prova social
+
+ Conclusão Executiva
+ 
+O mercado não é homogêneo — há concentração clara de valor
+
+Brooklyn representa a melhor oportunidade de expansão
+
+Quartos privativos são o ativo mais eficiente do portfólio
+
+Parte de Manhattan já apresenta sinais de saturação
+
+Expansão sem critério geográfico reduz margem e aumenta risco
+
+# Ferramentas
+Power BI / Power Query (visualização)
+GitHub (documentação)
+
+

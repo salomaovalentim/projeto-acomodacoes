@@ -32,13 +32,13 @@ Total de Avaliações: 37.457
 
  Insights Estratégicos (Nível Executivo)
  
- Concentração de Mercado
+# Concentração de Mercado
  
 Manhattan + Brooklyn = 85% das listagens
 
 83% de todas as avaliações estão nesses mercados
 
-Interpretação:
+# Interpretação:
 
 Demanda altamente concentrada
 
@@ -46,11 +46,11 @@ Mercados já validados
 
 Baixo risco de vacância estrutural
 
-Direcionamento:
+# Direcionamento:
 
 Mercados prioritários de entrada: Manhattan e Brooklyn
 
- Estratégia por Tipo de Quarto
+Estratégia por Tipo de Quarto
  
 Quartos privativos são 56% mais baratos que apartamentos inteiros
 
@@ -64,19 +64,19 @@ Quarto privativo → $70
 
 Quarto compartilhado → $45
 
-Interpretação:
+# Interpretação:
 
 Relação preço-demanda mais eficiente está nos quartos privativos
 
 Maior liquidez (mais reservas → mais avaliações)
 
-Direcionamento:
+# Direcionamento:
 
 Foco da expansão: quartos privativos
 
 Produto com melhor equilíbrio entre volume e margem
 
- Importância da Mediana
+# Importância da Mediana
 
 A análise utiliza mediana ao invés da média para preço.
 
@@ -84,7 +84,7 @@ Motivo:
 
 Remove distorções causadas por outliers (ex: imóveis de luxo)
 
-Resultado:
+# Resultado:
 
 Representação mais fiel do mercado real
 
@@ -118,7 +118,7 @@ Pressão em preços
 
 Staten Island e Bronx:
 
- Mercados não recomendados
+# Mercados não recomendados
 
 Baixa demanda relativa
 

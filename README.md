@@ -5,7 +5,9 @@ Este projeto analisa dados de listagens e avaliações para orientar decisões d
 A abordagem vai além da análise descritiva: transforma dados em direcionamento estratégico claro sobre onde expandir, qual produto priorizar e quais mercados evitar.
 
 
-Dashbord:<img width="1564" height="784" alt="image" src="https://github.com/user-attachments/assets/473169f9-7e83-471a-a992-48780716853c" />
+**[Abrir o dashboard publicado no Power BI](https://app.powerbi.com/view?r=eyJrIjoiYjZmYmQzY2MtZjgyYi00ZTgwLTllOWUtNWU2ZTUwNWIzZGFlIiwidCI6IjEyYzdlNGUxLWQ5MDMtNGJjMC04NzI5LTUxOTE2NmNhYzYwMiJ9)**
+
+<img width="1564" height="784" alt="image" src="https://github.com/user-attachments/assets/473169f9-7e83-471a-a992-48780716853c" />
 
 
 # Objetivo
@@ -186,6 +188,17 @@ Quartos privativos são o ativo mais eficiente do portfólio
 Parte de Manhattan já apresenta sinais de saturação
 
 Expansão sem critério geográfico reduz margem e aumenta risco
+
+# Dados
+
+Fonte: [New York City Airbnb Open Data (Kaggle)](https://www.kaggle.com/datasets/dgomonov/new-york-city-airbnb-open-data), retrato das listagens de 2019, em [`dados/AB_NYC_2019.csv`](dados/AB_NYC_2019.csv). Metodologia de tratamento e regras em [`docs/metodologia.md`](docs/metodologia.md); justificativa dos visuais em [`docs/justificativa_graficos.md`](docs/justificativa_graficos.md).
+
+# Premissas e limitações
+
+- A base não tem reservas nem ocupação real: **número de avaliações é usado como proxy de demanda**, e a disponibilidade anual (`availability_365`) como proxy de ociosidade. Proxies indicam tendência, não ocupação medida.
+- A receita estimada é um cálculo a partir de preço e proxies de demanda, não faturamento observado.
+- É um retrato de um único ano (2019); as recomendações de expansão são hipóteses a validar com dados de ocupação e custos.
+- Análise descritiva: mostra associações, não causas.
 
 # Ferramentas
 Power BI / Power Query (visualização)
